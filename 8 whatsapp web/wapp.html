@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="wapp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/wapp.js"></script>
+    <script src="js/data.js"></script>
+    <title>whatsapp web</title>
+</head>
+
+<body oncontextmenu="return false;">
+    <div class="wapp_loading_page">
+        <div class="load_content">
+            <img class="wapp_img" src="img/wapp_icon.svg" alt="wapp_icon">
+            <hr class="wapp_load_divider">
+            <hr class="wapp_load_divider2">
+            <p>WhatsApp</p>
+            <p><i class="fa fa-lock" id="lock" aria-hidden="true"></i>End-to-end encrypted</p>
+        </div>
+    </div>
+    <div class="bgcolor">
+    </div>
+    <div class="bgcolor2">
+
+        <div class="tot_page">
+            <div class="page1">
+                <div class="pg1_row1">
+                    <img class="pg1_r1_dp" id="click_dp" src="img/p1_r1_dp.jfif" alt="dpimage">
+                    <div class="pg1_icons">
+                        <img class="icon" id="status_bt" src="img/circle.png" alt="dpimage">
+                        <img class="icon" id="chat_bt" src="img/chat.png" alt="dpimage">
+                        <img class="icon" id="menu_bt" src="img/menu.png" alt="dpimage">
+                        <div class="pg1_r1_menu_bt" id="bt_options">
+                            <p>New group</p>
+                            <p>Create a room</p>
+                            <p id="clk_profile">Profile</p>
+                            <p>Archived</p>
+                            <p>Starred</p>
+                            <p id="setting_button">Settings</p>
+                            <p>Log out</p>
+                        </div>
+                        <div class="pg1_r1_profile" id="profile_clk_option">
+                            <div class="chat_bt_list">
+                                <i class="fa fa-arrow-left" id="profile_lft_ar_bt" aria-hidden="true"></i>
+                                <p>Profile</p>
+                            </div>
+                            <div class="pg1_profile_pic">
+                                <img class="profile_pic" src="img/p1_r1_dp.jfif" alt="profile_pic">
+                            </div>
+                            <div class="pg1_profile_name">
+                                <p class="pg1_pro_heading">Your Name</p>
+                                <div class="profile_edit">
+                                    <p class="profile_edit_p">SRK</p>
+                                    <i id="pro_pencil" class="fa fa-pencil" aria-hidden="true"></i>
+                                </div>
+
+                            </div>
+                            <div class="profile_content">
+                                <p class="profile_p">This is not your username or pin. This name will be visible to your
+                                    WhatsApp contacts.</p>
+                            </div>
+                            <div class="pg1_profile_name">
+                                <p class="pg1_pro_heading">About</p>
+                                <div class="profile_edit">
+                                    <p class="profile_edit_p">அச்சம் தவிர்.</p>
+                                    <i id="pro_pencil" class="fa fa-pencil" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <p class="empty"></p>
+                        </div>
+                        <div class="pg1_r1_chat_bt">
+                            <div class="chat_bt_list">
+                                <i class="fa fa-arrow-left" id="lft_ar_bt" aria-hidden="true"></i>
+                                <p>New chat</p>
+                            </div>
+                            <div class="pg1_row3">
+                                <p class="pg1_row3_search"><i class="fa fa-search" aria-hidden="true"></i>Search or
+                                    start new chat</p>
+
+                            </div>
+                            <div class="pg1_r1_chat_bt_scroll">
+                                <div class="chat_bt_srl">
+                                    <i class="fa fa-user-plus" id="chat_bt_srl_dp" aria-hidden="true"></i>
+                                    <p class="new_grp_p">New group</p>
+                                </div>
+                                <hr class="chat_srl">
+                                <p class="frq_con">FREQUENTLY CONTACTED</p>
+                                <hr class="chat_srl_divider">
+                                <div class="chat_bt_srl">
+                                    <img class="pg1_r1_dp" src="img/pp4.jfif" alt="dpimage">
+                                    <div class="dbl_content">
+                                        <p>Karthi Ece</p>
+                                        <p>Available</p>
+                                    </div>
+                                </div>
+                                <hr class="chat_srl_divider">
+                                <div class="chat_bt_srl">
+                                    <img class="pg1_r1_dp" src="img/pp3.jfif" alt="dpimage">
+                                    <div class="dbl_content">
+                                        <p>sathyam jii</p>
+                                        <p>Ellam nanmaike</p>
+                                    </div>
+                                </div>
+                                <hr class="chat_srl_divider">
+                                <div class="chat_bt_srl">
+                                    <img class="pg1_r1_dp" src="img/pp6.jfif" alt="dpimage">
+                                    <div class="dbl_content">
+                                        <p>Aneesh</p>
+                                        <p>Developer</p>
+                                    </div>
+                                </div>
+                                <hr class="chat_srl_divider">
+                                <div class="chat_bt_srl">
+                                    <img class="pg1_r1_dp" src="img/pp1.jfif" alt="dpimage">
+                                    <div class="dbl_content">
+                                        <p>Zulfi iipe</p>
+                                        <p>Smile</p>
+                                    </div>
+                                </div>
+                                <hr class="chat_srl_divider">
+                                <p class="frq_con">A</p>
+                                <hr class="chat_srl_divider">
+                                <div class="chat_bt_srl">
+                                    <img class="pg1_r1_dp" src="img/pp7.jfif" alt="dpimage">
+                                    <div class="dbl_content">
+                                        <p>Aadhavan iipe</p>
+                                        <p>Hopefully exploring</p>
+                                    </div>
+                                </div>
+                                <hr class="chat_srl_divider">
+                                <div class="chat_bt_srl">
+                                    <img class="pg1_r1_dp" src="img/pp8.jfif" alt="dpimage">
+                                    <div class="dbl_content">
+                                        <p>Aadhimoolam Ece</p>
+                                        <p>.</p>
+                                    </div>
+                                </div>
+                                <hr class="chat_srl_divider">
+                                <div class="chat_bt_srl">
+                                    <img class="pg1_r1_dp" src="img/pp10.jfif" alt="dpimage">
+                                    <div class="dbl_content">
+                                        <p>Amma</p>
+                                        <p>Hey there! I am using WhatsApp.</p>
+                                    </div>
+                                </div>
+                                <hr class="chat_srl_divider">
+                                <div class="chat_bt_srl">
+                                    <img class="pg1_r1_dp" src="img/pp11.jfif" alt="dpimage">
+                                    <div class="dbl_content">
+                                        <p>Akshay Sunil Kumar iipe</p>
+                                        <p>Changaimaru perutheishtam</p>
+                                    </div>
+                                </div>
+                                <hr class="chat_srl_divider">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pg1_row2">
+                    <i class="fa fa-bell-slash" id="bell_clk" aria-hidden="true"></i>
+                    <div class="pg1_row2_second">
+                        <p>Get notified of new messages</p>
+                        <p class="pg1_row2_second_para1">Turn on desktop notifications<img class="right_ar"
+                                src="img/right_arrow.png" alt="dpimage"></p>
+                    </div>
+                </div>
+                <div class="pg1_row3">
+                    <!-- <p class="pg1_row3_search"><i class="fa fa-search" aria-hidden="true"></i>Search or start new chat</p> -->
+                    <input type="text" placeholder="Search or start new chat" id="pg1_row3_search">
+                </div>
+                <div class="row4_scroll">
+                    <!-- <div class="pg1_row4" id="pg1_r4_right">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <div class="pg1_row4_second">
+                            <p class="pg1_row4_name">Web developer Class</p>
+                            <p class="pg1_row4_reply">+91 7708544891: S tq</p>
+                        </div>
+                        <div class="pg1_row4_day_icon">
+                            <p class="pg1_row4_day">Thursday</p>
+                            <img class="pin_icon" src="img/pin.png" alt="pin_icon">
+                        </div>
+                    </div> -->
+                    <div class="pg1_r4_rclk" id="rclk_options">
+                        <p>Archive chat</p>
+                        <p>Mute notifications</p>
+                        <p>Exit group</p>
+                        <p>Unpin chat</p>
+                        <p>Mark as unread</p>
+                    </div>
+                    <div class="clone">
+                        <div class="pg1_row4">
+                            <img class="pg1_r1_dp" src="img/pp6.jfif" alt="dpimage">
+                            <div class="pg1_row4_second">
+                                <p class="pg1_row4_name">Aneesh</p>
+                                <p class="pg1_row4_reply">hloo</p>
+                            </div>
+                            <div class="pg1_row4_day_icon">
+                                <p class="pg1_row4_day">Thursday</p>
+                                <p class="chat_count" p>2</p>
+                            </div>
+                        </div>
+                        <hr class="pg1_divider">
+                    </div>
+
+                </div>
+                <!-- <hr class="pg1_divider">
+                    <div class="pg1_row4">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <img class="pg1_r1_dp" src="img/pp1.jfif" alt="dpimage">
+                        <div class="pg1_row4_second">
+                            <p class="pg1_row4_name">zulfi iipe</p>
+                            <p class="pg1_row4_reply">ha ha</p>
+                        </div>
+                        <div class="pg1_row4_day_icon">
+                            <p class="pg1_row4_day">9:07 AM</p>
+                            <p class="chat_count" p>1</p>
+                        </div>
+                    </div>
+                    <hr class="pg1_divider">
+
+                    <div class="pg1_row4">
+                        <img class="pg1_r1_dp" src="img/pp2.jfif" alt="dpimage">
+                        <div class="pg1_row4_second">
+                            <p class="pg1_row4_name">Gowtham Bsnl</p>
+                            <p class="pg1_row4_reply">hiii</p>
+                        </div>
+                        <div class="pg1_row4_day_icon">
+                            <p class="pg1_row4_day">8.50 AM</p>
+                        </div>
+                    </div>
+                    <hr class="pg1_divider">
+                    <div class="pg1_row4">
+                        <img class="pg1_r1_dp" src="img/pp3.jfif" alt="dpimage">
+                        <div class="pg1_row4_second">
+                            <p class="pg1_row4_name">Sathyam Jii</p>
+                            <p class="pg1_row4_reply">gm</p>
+                        </div>
+                        <div class="pg1_row4_day_icon">
+                            <p class="pg1_row4_day">8:35 AM</p>
+                        </div>
+                    </div>
+                    <hr class="pg1_divider">
+                    <div class="pg1_row4">
+                        <img class="pg1_r1_dp" src="img/pp5.jfif" alt="dpimage">
+                        <div class="pg1_row4_second">
+                            <p class="pg1_row4_name">MMS</p>
+                            <p class="pg1_row4_reply">Mami: thank you akka</p>
+                        </div>
+                        <div class="pg1_row4_day_icon">
+                            <p class="pg1_row4_day">8.11 AM</p>
+                            <p class="chat_count" p>1</p>
+                        </div>
+                    </div>
+                    <hr class="pg1_divider">
+                    <div class="pg1_row4">
+                        <img class="pg1_r1_dp" src="img/pp4.jfif" alt="dpimage">
+                        <div class="pg1_row4_second">
+                            <p class="pg1_row4_name">Karthi Ece</p>
+                            <p class="pg1_row4_reply">pubg</p>
+                        </div>
+                        <div class="pg1_row4_day_icon">
+                            <p class="pg1_row4_day">yesterday</p>
+                        </div>
+                    </div>
+                    <hr class="pg1_divider">
+                    <div class="pg1_row4">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <div class="pg1_row4_second">
+                            <p class="pg1_row4_name">squad</p>
+                            <p class="pg1_row4_reply">tols: any one</p>
+                        </div>
+                        <div class="pg1_row4_day_icon">
+                            <p class="pg1_row4_day">yesterday</p>
+                        </div>
+                    </div>
+                    <hr class="pg1_divider">
+
+                    <hr class="pg1_divider">
+                    <div class="pg1_row4">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <div class="pg1_row4_second">
+                            <p class="pg1_row4_name">ECE Official</p>
+                            <p class="pg1_row4_reply">Rohith Ece: epo result poduvanga</p>
+                        </div>
+                        <div class="pg1_row4_day_icon">
+                            <p class="pg1_row4_day">monday</p>
+                        </div>
+                    </div>
+                    <hr class="pg1_divider">
+                </div> -->
+
+
+
+
+
+
+            </div>
+            <div class="page2">
+                <img class="pg2_image" src="img/page2.jpg" alt="p2img">
+                <p class="pg2_para1">Keep your phone connected</p>
+                <p class="pg2_para2">WhatsApp connects to your phone to sync messages. To reduce data usage, connect
+                    your phone to Wi-Fi.</p>
+                <hr class="pg2_divider">
+                <p class="pg2_para2"><i class="fa fa-laptop" aria-hidden="true"></i>WhatsApp is available for
+                    Windows.<span class="pg2_green">Get it here.</span></p>
+            </div>
+
+            <div class="chat_display">
+                <div class="chat_display_top">
+                    <img class="chat_userdp" id="click_dp" src="img/p1_r1_dp.jfif" alt="dpimage">
+                    <div class="chat_username">
+                        <p class="chat_name">Sivaramakrishnan</p>
+                        <!-- <p class="chat_time">last seen today at 8.47pm</p> -->
+                    </div>
+                    <div class="chat_display_top_icon">
+                        <i class="fa fa-search" id="icon" aria-hidden="true"></i>
+                        <img src="img/menu.png" id="user_menubt" alt="user_menu">
+                    </div>
+                </div>
+                <div class="chat_display_middle">
+                    <div class="chat_user_option" id="user_menu">
+                        <p>Contact info</p>
+                        <p>Select messages</p>
+                        <p>Mute notifications</p>
+                        <p>Clear message</p>
+                        <p>Delete chat</p>
+                    </div>
+                    <div class="chat_full">
+                        <p>hloooooooooooo</p>
+                        
+                        <div class="chat_opponent">
+                            
+                        </div>
+                        <div class="chat_text" id="chatText">
+                            <!-- <div class="chat_msg_time">
+                                <p class="msg"></p>
+                                <p class="time">4.31 PM</p>
+                            </div> -->
+                        </div>
+                    </div>
+                    
+                    <img class="chat_bgimg" src="img/wallpaper_bg.png">
+                </div>
+
+                <div class="chat_display_bottom">
+                    <div class="attach_icon">
+                        <div class="popup_flex">
+                            <i class="fa fa-video-camera" id="popup_icon" aria-hidden="true"></i>
+                            <i class="fa fa-user" id="popup_icon" aria-hidden="true"></i>
+                            <i class="fa fa-file" id="popup_icon" aria-hidden="true"></i>
+                            <i class="fa fa-camera" id="popup_icon" aria-hidden="true"></i>
+                            <i class="fa fa-picture-o" id="popup_icon" aria-hidden="true"></i>
+                            <span class="tooltip">gallery</span>
+                        </div>
+                    </div>
+                    <div class="chat_bottom_icon">
+                        <i class="fa fa-smile-o" aria-hidden="true"></i>
+                        <span><i class="fa fa-circle" id="bg_hide" aria-hidden="true"></i></span>
+                        <i class="fa fa-paperclip" id="attach_bt" aria-hidden="true"></i>
+                    </div>
+                    <input type="text" id="chat_typebox" placeholder="Type a message">
+                    <i class="fa fa-microphone" id="mic" aria-hidden="true"></i>
+                    <!-- <i class="fa fa-paper-plane" id="send" aria-hidden="true"></i> -->
+                    <img src="img/send.png" id="send" alt="send_icon">
+                </div>
+            </div>
+
+            <!-- <div class="user_profile">
+                <div class="chat_display_top">
+
+                </div>
+            </div> -->
+
+
+        </div>
+    </div>
+
+    <div class="status_full">
+        <div class="status">
+            <div class="status_pg1">
+                <div class="status_user_dp">
+                    <img class="pg1_r1_dp" id="click_dp" src="img/p1_r1_dp.jfif" alt="dpimage">
+                    <span class="status_user_p">
+                        <p class="status_user_p1">My Status</p>
+                        <p class="status_user_p2">No updates</p>
+                    </span>
+                </div>
+                <div class="status_recent">
+                    <hr class="status_recent_divider">
+                    <p class="recent_text">RECENT</p>
+                    <div class="status_recent_1">
+                        <img class="status_recent_1_img" id="click_dp" src="img/pp3.jfif" alt="dpimage">
+                        <span class="status_user_p">
+                            <p class="status_user_p1">Aswin Ece Nss juni</p>
+                            <p class="status_user_p2">today at 5.57pm</p>
+                        </span>
+                    </div>
+                    <div class="status_recent_1">
+                        <img class="status_recent_1_img" id="click_dp" src="img/pp2.jfif" alt="dpimage">
+                        <span class="status_user_p">
+                            <p class="status_user_p1">Narayanamoorthi iipe</p>
+                            <p class="status_user_p2">today at 5.46pm</p>
+                        </span>
+                    </div>
+                    <div class="status_recent_1">
+                        <img class="status_recent_1_img" id="click_dp" src="img/pp4.jfif" alt="dpimage">
+                        <span class="status_user_p">
+                            <p class="status_user_p1">Gowtham Bsnl</p>
+                            <p class="status_user_p2">today at 5.17pm</p>
+                        </span>
+                    </div>
+                    <div class="status_recent_1">
+                        <img class="status_recent_1_img" id="click_dp" src="img/pp5.jfif" alt="dpimage">
+                        <span class="status_user_p">
+                            <p class="status_user_p1">Sudharson old</p>
+                            <p class="status_user_p2">today at 4.42pm</p>
+                        </span>
+                    </div>
+                    <div class="status_recent_1">
+                        <img class="status_recent_1_img" id="click_dp" src="img/pp7.jfif" alt="dpimage">
+                        <span class="status_user_p">
+                            <p class="status_user_p1">Hirthik Xav</p>
+                            <p class="status_user_p2">today at 4.22pm</p>
+                        </span>
+                    </div>
+
+                    <hr class="status_recent_divider">
+                    <p class="recent_text">VIEWED</p>
+                    <div class="status_recent_1">
+                        <img class="status_viewed_1_img" id="click_dp" src="img/pp3.jfif" alt="dpimage">
+                        <span class="status_user_p">
+                            <p class="status_user_p1">Rafeeq mech</p>
+                            <p class="status_user_p2">today at 5.57pm</p>
+                        </span>
+                    </div>
+                    <div class="status_recent_1">
+                        <img class="status_viewed_1_img" id="click_dp" src="img/pp2.jfif" alt="dpimage">
+                        <span class="status_user_p">
+                            <p class="status_user_p1">Narayanamoorthi iipe</p>
+                            <p class="status_user_p2">today at 5.46pm</p>
+                        </span>
+                    </div>
+                    <div class="status_recent_1">
+                        <img class="status_viewed_1_img" id="click_dp" src="img/pp4.jfif" alt="dpimage">
+                        <span class="status_user_p">
+                            <p class="status_user_p1">Mahesh anna mech</p>
+                            <p class="status_user_p2">today at 5.17pm</p>
+                        </span>
+                    </div>
+                    <div class="status_recent_1">
+                        <img class="status_viewed_1_img" id="click_dp" src="img/pp5.jfif" alt="dpimage">
+                        <span class="status_user_p">
+                            <p class="status_user_p1">Karthi EEE</p>
+                            <p class="status_user_p2">today at 4.42pm</p>
+                        </span>
+                    </div>
+                    <div class="status_recent_1">
+                        <img class="status_viewed_1_img" id="click_dp" src="img/pp7.jfif" alt="dpimage">
+                        <span class="status_user_p">
+                            <p class="status_user_p1">Ravi</p>
+                            <p class="status_user_p2">today at 4.22pm</p>
+                        </span>
+                    </div>
+                    <div class="status_recent_1">
+                        <img class="status_viewed_1_img" id="click_dp" src="img/pp8.jfif" alt="dpimage">
+                        <span class="status_user_p">
+                            <p class="status_user_p1">Suresh kumar</p>
+                            <p class="status_user_p2">today at 4.22pm</p>
+                        </span>
+                    </div>
+                    <div class="status_recent_1">
+                        <img class="status_viewed_1_img" id="click_dp" src="img/pp2.jfif" alt="dpimage">
+                        <span class="status_user_p">
+                            <p class="status_user_p1">Vicky frnd</p>
+                            <p class="status_user_p2">today at 4.22pm</p>
+                        </span>
+                    </div>
+                    <div class="status_recent_1">
+                        <img class="status_viewed_1_img" id="click_dp" src="img/pp10.jfif" alt="dpimage">
+                        <span class="status_user_p">
+                            <p class="status_user_p1">Raj kunaal Ece</p>
+                            <p class="status_user_p2">today at 4.22pm</p>
+                        </span>
+                    </div>
+                    <div class="status_recent_1">
+                        <img class="status_viewed_1_img" id="click_dp" src="img/pp11.jfif" alt="dpimage">
+                        <span class="status_user_p">
+                            <p class="status_user_p1">yogesh cse nss</p>
+                            <p class="status_user_p2">today at 4.22pm</p>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="status_pg2">
+                <!-- <img class="status_pg2_icon" src="img/circle.png" alt="dpimage"> -->
+
+                <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
+                <p class="status_user_p2">Click on a contact to view their status updates</p>
+                <div class="cross">
+                    <i id="status_close" class="fa fa-times" aria-hidden="true"></i>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    </div>
+    <div class="settings">
+        <div class="chat_bt_list">
+            <i class="fa fa-arrow-left" id="setting_arrow" aria-hidden="true"></i>
+            <p>Settings</p>
+        </div>
+        <div class="settings_full">
+            <div class="settings_user">
+                <img class="setting_dp" src="img/p1_r1_dp.jfif" alt="dp">
+                <div class="setting_user_con">
+                    <p>SRK</p>
+                    <!-- <p>அச்சம் தவிர்.</p> -->
+                </div>
+            </div>
+            <div class="settings_1" id="notification_button">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <P>Notifications</P>
+            </div>
+            <hr class="settings_divider">
+            <div class="settings_1" id="theme_button">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+                <P>Theme</P>
+            </div>
+            <hr class="settings_divider">
+            <div class="settings_1" id="wallpaper_chat_button">
+                <i class="fa fa-picture-o" aria-hidden="true"></i>
+                <P>Chat Wallpaper</P>
+            </div>
+            <hr class="settings_divider">
+            <div class="settings_1">
+                <i class="fa fa-ban" aria-hidden="true"></i>
+                <P>Blocked</P>
+            </div>
+            <hr class="settings_divider">
+            <div class="settings_1">
+                <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+                <P>Keyboard Shortcuts</P>
+            </div>
+            <hr class="settings_divider">
+            <div class="settings_1">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                <P>Help</P>
+            </div>
+            <hr class="settings_divider">
+        </div>
+    </div>
+    <div class="notification">
+        <div class="chat_bt_list">
+            <i class="fa fa-arrow-left" id="notification_arrow" aria-hidden="true"></i>
+            <p>Notifications</p>
+        </div>
+        <div class="noti_1">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            <p>Sounds</p>
+        </div>
+        <div class="noti_1">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            <p>Desktop Alert</p>
+        </div>
+        <div class="noti_2">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            <div class="noti_2_content">
+                <p>Show Previews</p>
+                <p>Display message text in desktop alerts</p>
+            </div>
+        </div>
+        <div class="noti_1">
+            <!-- <i class="fa fa-check" aria-hidden="true"></i> -->
+            <span class="mty_box"></span>
+            <p>Turn off all desktop notifications</p>
+        </div>
+    </div>
+    <div class="theme_all">
+        <div class="settings_theme">
+            <div class="theme_option">
+                <p class="theme_head">Choose theme</p>
+                <div class="theme_input">
+                    <input type="radio" name="theme">
+                    <label>Light</label>
+                </div>
+                <div class="theme_input">
+                    <input type="radio" name="theme">
+                    <label>Dark</label>
+                </div>
+                <div class="theme_input">
+                    <input type="radio" name="theme">
+                    <label>System default</label>
+                </div>
+                <div class="theme_option_button">
+                    <input type="button" value="CANCEL" id="cancel">
+                    <input type="button" value="ok" id="ok">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="theme_background"></div>
+    <div class="wallpaper_full">
+        <div class="settings_wallpaper">
+            <div class="wallpaper_left">
+                <div class="chat_bt_list">
+                    <i class="fa fa-arrow-left" id="wallpaper_arrow" aria-hidden="true"></i>
+                    <p>Set Chat Wallpaper</p>
+                </div>
+                <div class="wallpaper_scroll">
+                    <div class="wallpaper_p">
+                        <input type="checkbox" id="checkbox_image">
+                        <p>Add WhatsApp Doodles</p>
+                    </div>
+                    <div class="wallpaper_colors">
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+                        <p class="color_1"></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="wallpaper_right">
+                <!-- <div class="wall_div"> -->
+                <p class="wall_right_p">Wallpaper Preview</p>
+                <div class="wall_bgcol">
+                    <img class="wall_bg_img" src="img/wallpaper_bg.png">
+                </div>
+                <p class="padding"></p>
+
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
